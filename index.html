@@ -3,14 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link href="./Assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Assets/style.css">
     <title>Weather Dashboard</title>
 </head>
 <body>
-    <div class="weather-banner" class="d-flex justify-content-end">
+    <div class="weather-banner">
         <h1>Weather Dashboard</h1>
     </div>
-    
+  <div class="container">
+    <div class="search-menu">
+      <!-- Your search form goes here -->
+      <form>
+        <h2>Search for a city:</h2>
+        <input id="cityInput" type="text" placeholder="Search...">
+        <button type="submit" class="search-button">Search</button>
+      </form>
+      <h2 id="cityName"></h2>
+    </div>
+    <div class="content">
+      <!-- Your information content goes here -->
+      <div class="city-card">
+        <!--<h1>Atlanta</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>-->
+      </div>
+
+      <div class="day-forecast">
+        <h2>5-Day Forecast:</h2>
+        <div class="weather-cards">
+            <!--<li class="card">
+                <h2>London 9-14-2023</h2>
+                <h4>Temp</h4>
+                <h4>Wind</h4>
+                <h4>Humidity</h4>
+            </li>
+            <li class="card">
+                <h2>London 9-14-2023</h2>
+                <h4>Temp</h4>
+                <h4>Wind</h4>
+                <h4>Humidity</h4>
+            </li>
+            <li class="card">
+                <h2>London 9-14-2023</h2>
+                <h4>Temp</h4>
+                <h4>Wind</h4>
+                <h4>Humidity</h4>
+            </li>
+            <li class="card">
+                <h2>London 9-14-2023</h2>
+                <h4>Temp</h4>
+                <h4>Wind</h4>
+                <h4>Humidity</h4>
+            </li>
+            <li class="card">
+                <h2>London 9-14-2023</h2>
+                <h4>Temp</h4>
+                <h4>Wind</h4>
+                <h4>Humidity</h4>
+            </li>-->
+          </div>
+      </div>
+      
+    </div>
+  </div>
+
+<script src="./Assets/script.js"></script>
 </body>
 </html>

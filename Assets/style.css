@@ -1,4 +1,52 @@
-.weather-banner h1{
+/* Reset some default styles for body and container */
+body, .container {
+    margin: 0;
+    padding: 0;
+  }
 
-    
+.weather-banner {
+    color: white;
+    text-align: end;
+    background-image: linear-gradient(to right, rgb(0, 88, 221), rgb(0, 27, 100));
 }
+  
+  /* Create a container to hold the search menu and content */
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Style the search menu */
+  .search-menu {
+    width: 250px;
+    padding: 20px;
+  }
+  
+  /* Style the content */
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  /* Style the search form (optional) */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style the search input and button (optional) */
+ .button {
+    margin-top: 10px;
+  }
+  
+  .weather-cards {
+    display: flex;
+    gap: 20px;
+
+  }
+
+  section {
+    margin-right: 15px;
+    list-style: none;
+  }
+

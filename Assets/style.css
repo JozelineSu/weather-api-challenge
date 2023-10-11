@@ -9,6 +9,10 @@ body, .container {
     text-align: end;
     background-image: linear-gradient(to right, rgb(0, 88, 221), rgb(0, 27, 100));
 }
+
+li {
+  list-style: none;
+}
   
   /* Create a container to hold the search menu and content */
   .container {
@@ -28,13 +32,13 @@ body, .container {
     padding: 20px;
   }
   
-  /* Style the search form (optional) */
+  /* Style the search form*/
   form {
     display: flex;
     flex-direction: column;
   }
   
-  /* Style the search input and button (optional) */
+  /* Style the search input and button*/
  .button {
     margin-top: 10px;
   }

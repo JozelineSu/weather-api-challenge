@@ -12,6 +12,7 @@ body, .container {
 
 li {
   list-style: none;
+  text-transform: capitalize;
 }
   
   /* Create a container to hold the search menu and content */
@@ -54,3 +55,6 @@ li {
     list-style: none;
   }
 
+  .city-card h1 {
+    text-transform: capitalize;
+  }

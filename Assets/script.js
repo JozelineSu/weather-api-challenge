@@ -33,21 +33,25 @@ searchButton.addEventListener("click", (e) => {
 
       fiveDaysForecast.forEach((forecast, index) => {
       const date = forecast.dt_txt.split(" ")[0];
+      
+      const icon = forecast.weather[0].icon;
+      const iconUrl = 'https://openweathermap.org/img/wn/' + icon +'.png';
       const temperature = forecast.main.temp;
       const windSpeed = forecast.wind.speed;
       const humidity = forecast.main.humidity;
       
       if (index === 0) {
         const cardHeader = document.createElement('section');
-        cardHeader.innerHTML = '<h1>' + city + ' ' + '(' + date + ')' + '</h1>' +
+        cardHeader.innerHTML = '<h1>' + city + ' ' + '(' + date + ')' + '<img src= "'+ iconUrl + '">' + '</h1>' +
                                   '<h4>Temp: ' + temperature + ' F</h4>'
                                   + '<h4>Wind: ' + windSpeed + ' MPH</h4>'
                                   + '<h4>Humidity: ' + humidity + ' %</h4>';
         mainCard.appendChild(cardHeader);
       } else {
         const card = document.createElement('section');
-        card.innerHTML = '<h4>' + date + '</h4>' +
-                            '<h4>Temp: ' + temperature + ' F</h4>'
+        card.innerHTML = '<h4>' + date + '</h4>'
+                            + '<img src= "'+ iconUrl + '">'
+                            + '<h4>Temp: ' + temperature + ' F</h4>'
                             + '<h4>Wind: ' + windSpeed + ' MPH</h4>'
                             + '<h4>Humidity: ' + humidity + ' %</h4>';
         weatherCards.appendChild(card);                      

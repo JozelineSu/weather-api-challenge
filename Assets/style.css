@@ -1,60 +1,80 @@
-/* Reset some default styles for body and container */
-body, .container {
-    margin: 0;
-    padding: 0;
-  }
+body, .container{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
 
+h1, h2, h4 {
+  font-weight: bold;
+}
+
+/* Styling for banner */
 .weather-banner {
-    color: white;
-    text-align: end;
-    background-image: linear-gradient(to right, rgb(0, 88, 221), rgb(0, 27, 100));
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(to right, rgb(0, 88, 221), rgb(0, 27, 100));
+}
+
+/* Create a container to hold the search menu and forecast */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/*Styling for the search form + its container */
+.search-menu {
+  width: 350px;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-button {
+  margin-top: 15px;
+  background-color:rgb(112, 152, 226);
+  color: white;
+}
+
+#citySearches {
+  padding: 0;
+  margin-top: 30px;  
 }
 
 li {
+  margin-top: 10px;
   list-style: none;
   text-transform: capitalize;
+  text-align: center;
+  background-color: rgb(187, 185, 185);
+  color: black;
 }
-  
-  /* Create a container to hold the search menu and content */
-  .container {
-    display: flex;
-    height: 100vh;
-  }
-  
-  /* Style the search menu */
-  .search-menu {
-    width: 250px;
-    padding: 20px;
-  }
-  
-  /* Style the content */
-  .content {
-    flex-grow: 1;
-    padding: 20px;
-  }
-  
-  /* Style the search form*/
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Style the search input and button*/
- .button {
-    margin-top: 10px;
-  }
-  
-  .weather-cards {
-    display: flex;
-    gap: 20px;
 
-  }
+/* Style the main city card + weather cards */
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
 
-  section {
-    margin-right: 15px;
-    list-style: none;
-  }
+.city-card {
+  border: 1px rgb(29, 29, 29) solid;
+}
 
-  .city-card h1 {
-    text-transform: capitalize;
-  }
+.city-card h1 {
+  text-transform: capitalize;
+}
+
+.weather-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.weather-cards section {
+  background-color: rgb(22, 49, 85);
+  color: white;
+  padding: 10px;
+  width: 200px;
+}  

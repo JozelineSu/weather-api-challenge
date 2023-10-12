@@ -24,13 +24,18 @@ h1, h2, h4 {
 
 /*Styling for the search form + its container */
 .search-menu {
-  width: 350px;
+  width: 325px;
   padding: 20px;
 }
 
 form {
   display: flex;
   flex-direction: column;
+}
+
+#cityInput, .search-button, li {
+  height: 30px;
+  border-radius: 5px;
 }
 
 .search-button {
@@ -76,5 +81,5 @@ li {
   background-color: rgb(22, 49, 85);
   color: white;
   padding: 10px;
-  width: 200px;
+  width: 150px;
 }  
